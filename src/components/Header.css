@@ -1,0 +1,54 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  border-bottom: 1px solid #EEEEEE;
+  font-size: 18px;
+  padding: 0px 10px;
+}
+
+.rounded {
+  border-radius: 50%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
+
+.logo img {
+  max-width: 40px;
+  margin-right: 5px;
+}
+
+.logo a {
+  text-decoration: none;
+  color: black; /* Textfarbe auf Schwarz gesetzt */
+}
+
+.navigation .link {
+  padding: 10px;
+  text-decoration: none;
+  color: black; /* Textfarbe auf Schwarz gesetzt */
+}
+
+.navigation .link.active {
+  background-color: #EEEEEE;
+  border-radius: 5px;
+}
+
+.items {
+  font-weight: 500;
+  min-width: 70px;
+  text-decoration: none;
+  color: black; /* Textfarbe auf Schwarz gesetzt */
+}
+
+@media screen and (max-width: 680px) {
+  /* Responsive styles */
+}
