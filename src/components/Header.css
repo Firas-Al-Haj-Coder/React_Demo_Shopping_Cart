@@ -1,9 +1,9 @@
 header {
   display: flex;
   justify-content: space-between;
-  height: 70px;
+  height: 50px;
   align-items: center;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: auto;
   border-bottom: 1px solid #EEEEEE;
   font-size: 18px;
@@ -22,7 +22,7 @@ header {
 }
 
 .logo img {
-  max-width: 40px;
+  max-width: 50px;
   margin-right: 5px;
 }
 

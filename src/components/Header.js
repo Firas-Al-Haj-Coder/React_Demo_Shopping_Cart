@@ -1,10 +1,15 @@
 import './Header.css';
 import { Link, NavLink } from 'react-router-dom';
+import { useCart } from '../context/CartContext';
+
 
 const logo = process.env.PUBLIC_URL + '/assets/images/logo_192.jpg';
 
+
 export default function Header() {
-  console.log('Header component rendered');
+
+  const { cartList } = useCart();
+
   return (
     <header>
         <Link to="/" className="logo">
@@ -18,7 +23,7 @@ export default function Header() {
         </nav>
 
         <Link to="/cart" className="items">
-            <span>Cart</span>
+            <span>Cart: {cartList.length}</span>
         </Link>
     </header>
   );

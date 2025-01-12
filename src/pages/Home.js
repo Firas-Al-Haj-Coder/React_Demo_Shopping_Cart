@@ -1,6 +1,6 @@
 import ProductCard from "../components/ProductCard";
 import useTitle from "../hooks/useTitle";
-
+import "./Home.css"
 export default function Home() {
 
 
@@ -15,18 +15,13 @@ export default function Home() {
     { id: 6, name: "ZEBRONICS Zeb-Thunder Wired", price: 29, image: process.env.PUBLIC_URL + "/assets/images/1006.png" }
   ];
 
-  const productsStyle = {
-    marginTop: '10px',
-    display: 'flex',
-    flexWrap: 'wrap',
-    justifyContent: 'space-around'
-  };
-
   return (
-    <section className="products" style={productsStyle}>
-      {products.map((p) => (
-        <ProductCard key={p.id} prod={p} />
-      ))}
-    </section>
+    <main>
+      <section className="products">
+        {products.map((p) => (
+          <ProductCard key={p.id} prod={p} />
+        ))}
+      </section>
+    </main>
   );
 }
